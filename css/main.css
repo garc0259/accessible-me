@@ -1,3 +1,34 @@
+
+* 
+
+{box-sizing: border-box;
+}
+
+/* SKIPLINK */
+
+.skiplink-nav {
+  list-style: none;
+  /* display: none;
+  visibility: hidden; */
+
+}
+
+.skiplink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  text-decoration: none;
+  transform: translateY(-100%);
+ 
+}
+
+.skiplink a:focus {
+  transform: translateY(0);
+}
+
+/* SKIPLINK */
+
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: white;
@@ -29,7 +60,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 0 0 1.5rem 1rem;
 }
 
 .main-nav ul li {
@@ -43,6 +74,16 @@ img {
   text-decoration: none;
   font-size: 1.25rem;
 }
+
+/* MAIN NAV HOVER */
+
+.main-nav ul a:hover,
+.main-nav ul a:focus {
+  color: white;
+  background-color: black;
+  text-decoration: underline;
+}
+/* MAIN NAV HOVER */
 
 form input,
 form textarea {
@@ -66,7 +107,26 @@ form button {
   text-transform: uppercase;
 }
 
+/* Form button Hover */
+
+form button {
+  cursor: pointer;
+  background: none;
+  border: 2px solid black;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+form button:hover {
+
+  background-color: black;
+  color: white;
+}
+
 .footer {
   padding: 2rem 0;
   text-align: center;
 }
+
+
+/* Form button Hover */
