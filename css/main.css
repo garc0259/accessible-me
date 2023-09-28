@@ -6,28 +6,27 @@
 
 /* SKIPLINK */
 
-.skiplink-nav {
-  list-style: none;
   /* display: none;
   visibility: hidden; */
 
+.skip-links-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-.skiplink {
+.skip-links a{
   position: absolute;
+  top: -3em;
+  background-color: black;
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+.skip-links a:focus{
   top: 0;
-  left: 0;
-  display: block;
-  text-decoration: none;
-  transform: translateY(-100%);
- 
 }
 
-.skiplink a:focus {
-  transform: translateY(0);
-}
-
-/* SKIPLINK */
+/* BODY */
 
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
@@ -54,6 +53,8 @@ h6 {
 img {
   width: 100%;
 }
+
+/* MAIN NAV */
 
 .main-nav ul {
   list-style: none;
@@ -82,8 +83,10 @@ img {
   color: white;
   background-color: black;
   text-decoration: underline;
+  outline-color: black;
 }
-/* MAIN NAV HOVER */
+
+/* FORM*/
 
 form input,
 form textarea {
@@ -117,15 +120,16 @@ form button {
   text-transform: uppercase;
 }
 
-form button:hover {
-
+form button:hover,
+form button:focus {
   background-color: black;
   color: white;
+  outline-color: black;
 }
+ 
 
 .footer {
   padding: 2rem 0;
   text-align: center;
 }
 
-/* Form button Hover */
