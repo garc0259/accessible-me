@@ -19,22 +19,22 @@
       <h1>Jam Box Studios</h1>
 
 <!-- SKIP LINK + ARIA -->
-<ul class="skip-links-nav">
-  <li class="skip-links">
-    <a href="#about" aria-label="Skip to About Jam Box"
-      >Skip to About Jam Box</a>
+<ul class="skip-links">
+  <li class="skip-links-nav">
+    <a href="#main-content" aria-label="Skip to About Jam Box">
+      Go to About Jam Box</a>
   </li>
-  <li class="skip-links">
-    <a href="#owner" aria-label="Skip to Meet the owner"
-      >Skip to Meet the owner</a>
+  <li class="skip-links-nav">
+    <a href="#owner" aria-label="Skip to Meet the owner">
+      Go to Meet the owner</a>
   </li>
-  <li class="skip-links">
-    <a href="#address" aria-label="Skip to Address"
-      >Skip to Address</a>
+  <li class="skip-links-nav">
+    <a href="#address" aria-label="Skip to Address">
+      Go to Address</a>
   </li>
-  <li class="skip-links">
-    <a href="#contact" aria-label="Skip to Contact Us"
-      >Skip to Contact Us</a>
+  <li class="skip-links-nav">
+    <a href="#contact-us" aria-label="Skip to Contact Us">
+      Go to Contact Us</a>
   </li>
 </ul>
 <!-- SKIP LINK + ARIA -->
@@ -57,11 +57,11 @@
   <main>
     <img src="https://placekitten.com/1200/900" alt="a photo of a kitten" class="banner" aria-label="Kitten">
     
-    <div class="main-content">
+    <div id="main-content">
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
+      <div id="owner">
         <h2>Meet the owner</h2>
         <ul itemscope itemtype="https://schema.org/Person">
           <li itemprop="givenName">Name: John Doe</li>
@@ -69,6 +69,7 @@
           <li itemprop="email">Email: johnjoe@jambox.ca</li>
           <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
+        <div id="address">
         <h2>Address</h2>
         <address itemscope itemtype="https://schema.org/PostalAddress">
           <span itemprop="streetAddress">123 Guitar Road</span>
@@ -76,8 +77,9 @@
           <span itemprop="addressCountry">Danceistan</span>
           <span itemprop="postalCode">B3T 0L0.</span>
         </address>
+       </div>
       </div>
-      <div class="contact-section">
+      <div id="contact-us">
         <h2>Contact Us</h2>
         <form action="thanks.html">
           <label>Full Name</label>
